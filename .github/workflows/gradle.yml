@@ -23,5 +23,9 @@ jobs:
         distribution: 'adopt'
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
+    - name: directory
+      run: echo %cd%
+    - name: environment
+      run: set OHOS_SDK_HOME=%cd%/huawei
     - name: Build with Gradle
       run: ./gradlew build
