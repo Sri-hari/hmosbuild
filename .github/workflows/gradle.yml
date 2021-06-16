@@ -27,10 +27,6 @@ jobs:
       run: |
            echo "OHOS_SDK_HOME=${OHOS_SDK_HOME}"
            printenv
-    - name: directory
-      run: echo %cd%
-    - name: environment
-      run: set OHOS_SDK_HOME=%cd%/huawei
     - name: Cache SonarCloud packages
       uses: actions/cache@v1
       with:
@@ -47,4 +43,4 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: ./gradlew build sonarqube --info
+      run: ./gradlew build sonarqube --info
