@@ -23,6 +23,15 @@ jobs:
         distribution: 'adopt'
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
+    - name: set environment variables
+      uses: allenevans/set-env@v2.0.0
+      with:
+          OHOS_SDK_HOME: ${GITHUB_WORKSPACE}
+
+    - name: Printenv
+      run: |
+           echo "OHOS_SDK_HOME=${OHOS_SDK_HOME}"
+           printenv
     - name: directory
       run: echo %cd%
     - name: environment
