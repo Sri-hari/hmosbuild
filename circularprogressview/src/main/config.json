@@ -1,0 +1,28 @@
+{
+  "app": {
+    "bundleName": "com.github.rahatarmanahmed.cpv",
+    "vendor": "github",
+    "version": {
+      "code": 1,
+      "name": "1.0"
+    },
+    "apiVersion": {
+      "compatible": 5,
+      "target": 5,
+      "releaseType": "Beta1"
+    }
+  },
+  "deviceConfig": {
+  },
+  "module": {
+    "package": "com.github.rahatarmanahmed.cpv",
+    "deviceType": [
+      "phone"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "circularprogressview",
+      "moduleType": "har"
+    }
+  }
+}

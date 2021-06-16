@@ -1,0 +1,10 @@
+[
+    {
+        "Name": "CircularProgressView",
+        "License": "MIT License",
+        "License File": " LICENSE ",
+        "Version Number": "2.5.0",
+        "Upstream URL": "https://github.com/rahatarmanahmed/CircularProgressView",
+        "Description": "Material style circular progress bar for Android"
+    }
+]

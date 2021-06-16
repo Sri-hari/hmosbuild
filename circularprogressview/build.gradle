@@ -1,0 +1,20 @@
+apply plugin: 'com.huawei.ohos.library'
+//apply from: '../upload.gradle'
+
+rootProject.ext {
+    DEFAULT_GROUP_ID='io.openharmony.tpc.thirdlib' //固定的groupId，不需要改动
+    DEFAULT_ARTIFACT_ID="CircularProgressView" //项目ID，填写项目名称。
+    DEFAULT_VERSION='1.0.0' //版本号，发新版本时修改
+}
+ohos {
+    compileSdkVersion 5
+    defaultConfig {
+        compatibleSdkVersion 5
+    }
+    
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile'junit:junit:4.12'
+}

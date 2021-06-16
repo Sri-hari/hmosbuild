@@ -1,0 +1,44 @@
+{
+  "app": {
+    "bundleName": "com.github.rahatarmanahmed.cpv",
+    "vendor": "github",
+    "version": {
+      "code": 1,
+      "name": "1.0"
+    },
+    "apiVersion": {
+      "compatible": 3,
+      "target": 3
+    }
+  },
+  "deviceConfig": {
+  },
+  "module": {
+    "package": "com.github.rahatarmanahmed.cpv",
+    "name": "testModule",
+    "reqCapabilities": [
+      "video_support"
+    ],
+    "deviceType": [
+      "phone"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "test",
+      "moduleType": "feature"
+    },
+    "abilities": [
+      {
+        "name": "decc.testkit.runner.EntryAbility",
+        "description": "Test Entry Ability",
+        "icon": "$media:icon",
+        "label": "TestAbility",
+        "launchType": "standard",
+        "orientation": "landscape",
+        "visible": true,
+        "formEnabled": false,
+        "type": "page"
+      }
+    ]
+  }
+}

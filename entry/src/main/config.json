@@ -1,0 +1,54 @@
+{
+  "app": {
+    "bundleName": "com.github.rahatarmanahmed.cpv",
+    "vendor": "github",
+    "version": {
+      "code": 1,
+      "name": "1.0"
+    },
+    "apiVersion": {
+      "compatible": 5,
+      "target": 5,
+      "releaseType": "Beta1"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.github.rahatarmanahmed.cpv",
+    "name": ".CircularProgressView",
+    "reqCapabilities": [
+      "video_support"
+    ],
+    "deviceType": [
+      "phone"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry"
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "orientation": "unspecified",
+        "formEnabled": false,
+        "name": "com.github.rahatarmanahmed.cpv.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "CircularProgressView",
+        "type": "page",
+        "launchType": "standard",
+        "visible": false
+      }
+    ]
+  }
+}

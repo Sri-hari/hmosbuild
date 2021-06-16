@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    xmlns:app="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+
+    <RoundProgressBar
+        ohos:id="$+id:native_progress_bar"
+        ohos:height="50vp"
+        ohos:width="50vp"
+        ohos:infinite="true"
+        ohos:layout_alignment="horizontal_center"
+        ohos:top_margin="100vp"
+        />
+
+    <Text
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:layout_alignment="horizontal_center"
+        ohos:text="Native ProgressBar"
+        ohos:text_size="20fp"/>
+
+    <com.github.rahatarmanahmed.cpv.CircularProgressView
+        ohos:id="$+id:progress_view"
+        ohos:height="50vp"
+        ohos:width="50vp"
+        ohos:layout_alignment="horizontal_center"
+        ohos:padding="0vp"
+        ohos:top_margin="50vp"
+        app:cpv_animAutostart="false"
+        app:cpv_indeterminate="true"
+        app:cpv_thickness="8"/>
+
+    <Text
+        ohos:id="$+id:progress_view_label"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:layout_alignment="horizontal_center"
+        ohos:text="CircularProgressView"
+        ohos:text_size="20fp"/>
+
+    <Button
+        ohos:id="$+id:button"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:layout_alignment="horizontal_center"
+        ohos:padding="5vp"
+        ohos:text="Switch to Determinate"
+        ohos:text_size="20fp"/>
+</DirectionalLayout>
