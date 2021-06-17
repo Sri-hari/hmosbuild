@@ -5,9 +5,9 @@ name: Java CI with Gradle
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:
   build:
@@ -43,4 +43,4 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-      run: ./gradlew build sonarqube --info
+      run: ./gradlew assembleDebug sonarqube --info
