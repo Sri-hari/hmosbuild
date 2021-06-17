@@ -51,17 +51,21 @@ jobs:
         path: build\outputs\hap\debug\phone
         
         
-  checkstyle_job:
+  java-checkstyle:
     runs-on: ubuntu-latest
-    name: Checkstyle job
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
-    - name: Run check style
-      uses: nikitasavinov/checkstyle-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        reporter: 'github-pr-review'
-        tool_name: 'testtool'
-        filter_mode: 'nofilter'
-        level: 'info'
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+      - name: Run Java Checkstyle
+        uses: Justintime50/java-checkstyle-action@v1
+        with:
+          # The directory to run Checkstyle recursively on.
+          # Default is the root of your project.
+          directory: /path/to/dir
+
+          # The name of the style suite to be used, either 'sun' or 'google'.
+          # Default is shown.
+          style_suite: google
+      - uses: jwgmeligmeyling/checkstyle-github-action@master
+        with:
+          path: '**/checkstyle-result.xml'
