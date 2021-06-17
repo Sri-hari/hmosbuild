@@ -49,26 +49,6 @@ jobs:
       with: 
         name: assets-for-download
         path: build\outputs\hap\debug\phone
-        
-        
-  java-checkstyle:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v2
-      - name: Run Java Checkstyle
-        uses: Justintime50/java-checkstyle-action@v1
-        with:
-          # The directory to run Checkstyle recursively on.
-          # Default is the root of your project.
-          directory: .
-
-          # The name of the style suite to be used, either 'sun' or 'google'.
-          # Default is shown.
-          style_suite: google
-      - uses: jwgmeligmeyling/checkstyle-github-action@master
-        with:
-          path: '**/checkstyle-result.xml'
 
   checkstyle:
     name: runner / checkstyle
