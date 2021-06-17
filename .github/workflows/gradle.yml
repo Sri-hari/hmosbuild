@@ -61,7 +61,7 @@ jobs:
         with:
           # The directory to run Checkstyle recursively on.
           # Default is the root of your project.
-          directory: /path/to/dir
+          directory: .
 
           # The name of the style suite to be used, either 'sun' or 'google'.
           # Default is shown.
