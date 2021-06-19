@@ -44,7 +44,7 @@ sonarqube {
     property "sonar.projectKey", "2"
     property "sonar.organization", "sri-hari"
     property "sonar.host.url", "https://sonarcloud.io"
-    property "sonar.sources", "entry"
+    property "sonar.sources", "entry,circularprogressview"
     property "sonar.java.binaries", "entry/build/intermediates/javac/debug/classes,circularprogressview/build/intermediates/javac/debug/classes"
   }
 }
