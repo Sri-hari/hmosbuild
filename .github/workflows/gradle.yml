@@ -27,7 +27,7 @@ jobs:
     - name: set environment variables
       uses: allenevans/set-env@v2.0.0
       with:
-          OHOS_SDK_HOME: ${{ GITHUB_WORKSPACE }}\huawei
+          OHOS_SDK_HOME: '${{ GITHUB_WORKSPACE }}\huawei'
           
     - name: Printenv
       run: |
