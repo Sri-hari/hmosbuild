@@ -1,4 +1,5 @@
 ![example workflow](https://github.com/Sri-hari/hmosbuild/actions/workflows/gradle.yml/badge.svg)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=2&metric=alert_status)](https://sonarcloud.io/dashboard?id=2)
 ## CircularProgressView
 
 ## Introduction
