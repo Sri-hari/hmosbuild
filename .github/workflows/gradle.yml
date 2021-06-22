@@ -32,6 +32,7 @@ jobs:
       uses: actions/checkout@main
       with:
         repository: applibgroup/HarmonyOsSdk
+        path: huawei
         
     - name: Cache SonarCloud packages
       uses: actions/cache@v1
