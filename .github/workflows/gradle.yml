@@ -31,8 +31,8 @@ jobs:
           
     - name: Printenv
       run: |
-           echo "OHOS_SDK_HOME=${GITHUB_WORKSPACE}\huawei"
-           printenv
+        echo "MY_ENV_VAR=%OHOS_SDK_HOME%"
+        printenv
            
     - name: Download HMOS SDK
       uses: actions/checkout@main
