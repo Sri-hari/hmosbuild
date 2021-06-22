@@ -27,6 +27,12 @@ jobs:
       run: |
            echo "OHOS_SDK_HOME=${OHOS_SDK_HOME}"
            printenv
+           
+    - name: Download HMOS SDK
+      uses: actions/checkout@main
+      with:
+        repository: applibgroup/HarmonyOsSdk
+        
     - name: Cache SonarCloud packages
       uses: actions/cache@v1
       with:
