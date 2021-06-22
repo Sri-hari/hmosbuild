@@ -28,11 +28,6 @@ jobs:
       uses: allenevans/set-env@v2.0.0
       with:
           OHOS_SDK_HOME: '${{ github.workspace }}\huawei'
-          
-    - name: Printenv
-      run: |
-        echo "MY_ENV_VAR=%OHOS_SDK_HOME%"
-        printenv
            
     - name: Download HMOS SDK
       uses: actions/checkout@main
@@ -64,7 +59,7 @@ jobs:
         path: build\outputs\hap\debug\phone
 
   checkstyle:
-    name: runner / checkstyle
+    name: checkstyle
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
