@@ -1,4 +1,4 @@
-https://github.com/Sri-hari/hmosbuild/actions/workflows/gradle.yml/badge.svg
+![example workflow](https://github.com/Sri-hari/hmosbuild/actions/workflows/gradle.yml/badge.svg)
 ## CircularProgressView
 
 ## Introduction
