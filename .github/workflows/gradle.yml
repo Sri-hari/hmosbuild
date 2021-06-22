@@ -10,7 +10,7 @@ on:
     branches: [ main ]
 
 jobs:
-  Hmos Build:
+  Hmos_Build:
 
     runs-on: windows-latest
 
